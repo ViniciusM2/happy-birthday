@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "158644205303",
+    "firebase_url": "https://estudos-18558.firebaseio.com",
+    "project_id": "estudos-18558",
+    "storage_bucket": "estudos-18558.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158644205303:android:3333ceb6820b601ea905f2",
+        "android_client_info": {
+          "package_name": "menezes.vinicius.com.redeinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158644205303-ihdlqe954ebf0e7hjrs4or54nnlsl77k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "menezes.vinicius.com.redeinfo",
+            "certificate_hash": "527434b452f402c4e2a5ca3527330a07dc251b16"
+          }
+        },
+        {
+          "client_id": "158644205303-4n1fi9c14mfi8t0jabsrgafggn605mv9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZ_ciRWXFFqyTdte3RrvDokVzoPA-krb8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158644205303-4n1fi9c14mfi8t0jabsrgafggn605mv9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
