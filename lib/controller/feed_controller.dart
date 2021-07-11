@@ -16,6 +16,7 @@ class FeedController extends GetxController {
 
   TextEditingController textController =
       TextEditingController(text: 'Parabéns!');
+  TextEditingController nameController = TextEditingController(text: 'Anônimo');
 
   final imageBytes = Uint8List.fromList([]).obs;
   PickedFile _pickedFile = PickedFile('');
@@ -47,6 +48,7 @@ class FeedController extends GetxController {
             onSend: handleNewPostSecondAct,
             onPickImage: pickImage,
             imageBytes: imageBytes.value,
+            nameController: nameController,
           ),
         ),
       ),
@@ -64,7 +66,7 @@ class FeedController extends GetxController {
       var post = PostModel(
         title: textController.text,
         dateTime: DateTime.now(),
-        authorName: 'Autor Anônimo',
+        authorName: nameController.text,
         numberOfLikes: 0,
         numberOfComments: 0,
         imageUrl: await task.ref.getDownloadURL(),

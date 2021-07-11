@@ -5,11 +5,13 @@ import 'package:get/get.dart';
 
 class PostForm extends StatelessWidget {
   final TextEditingController? messageController;
+  final TextEditingController? nameController;
   final VoidCallback onSend;
   final VoidCallback onPickImage;
   final Uint8List imageBytes;
   PostForm({
     required this.messageController,
+    required this.nameController,
     required this.onSend,
     required this.onPickImage,
     required this.imageBytes,
@@ -29,6 +31,13 @@ class PostForm extends StatelessWidget {
             Text(
               'Digite a sua frase de feliz aniversário!',
               style: Get.theme.textTheme.bodyText1,
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            TextField(
+              controller: nameController,
+              decoration: InputDecoration(labelText: 'Nome da Pessoa'),
             ),
             SizedBox(
               height: 20,

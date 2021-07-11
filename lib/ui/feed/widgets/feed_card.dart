@@ -25,8 +25,11 @@ class FeedCard extends StatelessWidget {
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white12,
+                  image: DecorationImage(
+                    image: NetworkImage(post.imageUrl),
+                  ),
                 ),
-                child: Image.network(post.imageUrl),
+                // child: Image.network(post.imageUrl),
               ),
             ),
             ButtonBar(
