@@ -55,7 +55,7 @@ class _ColumnsLayout extends StatelessWidget {
               child: Obx(() => GridView.builder(
                     itemCount: controller.feedModel.value.posts.length,
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 3,
+                      crossAxisCount: context.width < 900 ? 1 : 3,
                     ),
                     itemBuilder: (context, index) {
                       return Padding(
